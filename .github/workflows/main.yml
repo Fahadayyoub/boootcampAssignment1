@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 12
       - name: Install Surge
-        run: npm Install surge
+        run: npm install -g surge
       - name: Run Surge
         run: surge ./ fahadBootcamp2020Assignment1.surge.sh --token ${{secrets.SURGE_TOKEN}}
           
